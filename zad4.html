@@ -8,7 +8,35 @@
     </head>
     <body>
 
-        
+        <form>
+
+            <label>Adres e-mail:
+                <input type="email" placeholder="Wpisz adres email" />
+            </label><br><br>
+            
+            <label>Szukaj:
+                <input type="search" placeholder="Wpisz szukany tekst" />
+            </label><br><br>
+    
+            <label>Wybierz wartość od 1 do 5:
+                <input type="range" min="1" max="5" value="1" /><br><br>
+                Lub wpisz wartość:
+                <input type="mumber" min="1" max="5" value="1" />
+            </label><br><br>
+    
+            <label>Wybierz kolor:
+                <input type="color" />
+            </label><br><br>
+    
+            <label>Wybierz datę urodzenia:
+                <input type="date" max="2022-05-01" />
+            </label><br><br>
+    
+            <input type="submit" name="wyslij" value="Wyślij" />&nbsp;&nbsp;
+            <input type="reset" name="zeruj" value="Wyczyść" />
+            
+        </form>
+
 
     </body>
 </html>

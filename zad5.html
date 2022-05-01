@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-    <title>Formularz</title>
-</head>
-<body>
-<form>
-Choose your fighter:
-	<input type="text" name="przedmiot" list="owoce" value="">
-    <datalist id="owoce">
-    	<option value="Ananas">Ananas</option>
-        <option value="Gruszka">Gruszka</option>
-        <option value="Jabłko">Jabłko</option>
-        <option value="Winogrono">Winogrono</option>
-        <option value="Banaaaaanaaaa">Banaaaaanaaaa</option>
-        <option value="Michael.">Michael.</option>
-</form>
-</body>
+    <head>
 
+        <title>Dane osobowe</title>
+        <meta charset="UTF-8" />
+
+    </head>
+    <body>
+
+        <form>
+
+            Dane osobowe <br><br>
+            Imię: <input type="text" name="imie" placeholder="np. Konegunda" maxlength="20" /><br><br>
+            Nazwisko: <input type="text" name="nazwisko" placeholder="np. Brzęczyszczykiewicz" maxlength="19" /><br><br>
+            Data urodzenia: <input type="date" /><br><br>
+            Miejsce urodzenia: <input type="text" name="miejsce" value=" " />
+            <br><br><br>
+            Pozostałe informacje <br><br>
+            Wykształcenie: 
+            <input type="radio" name="subject" value="Podstawowe" />Podstawowe
+            <input type="radio" name="subject" value="Średnie" />Średnie
+            <input type="radio" name="subject" value="Wyższe" />Wyższe
+            <br><br>
+            Zawód wykonywany: <input type="text" name="zawod" maxlength="30" /><br><br>
+            Dodatkowe umiejętności:
+            <textarea rows="6" cols="50" name="umiejetnosci"></textarea><br><br>
+
+            <input type="submit" name="wyslij" value="Wyślij" />&nbsp;&nbsp;
+            <input type="reset" name="zeruj" value="Wyczyść" />
+
+        </form>
+
+    </body>
 </html>
