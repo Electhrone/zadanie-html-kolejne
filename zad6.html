@@ -8,7 +8,36 @@
     </head>
     <body>
 
-        
+        <form novalidate>
+
+            Nazwisko: <input type="text" name="nazwisko" /><br><br>
+            Imię: <input type="text" name="imie" /><br><br>
+            PESEL: <input type="number" name="pesel" placeholder="Wpisz swój numer PESEL" /><br><br>
+            <br>
+
+            <input type="checkbox" name="subject" value="j.polski" /> j. polski <br>
+            <input type="checkbox" name="subject" value="matematyka" /> matematyka <br>
+            <input type="checkbox" name="subject" value="fizyka" /> fizyka <br><br>
+            <br>
+
+            Uwagi: <br>
+            <textarea rows="3" cols="20" name="uwagi"></textarea><br><br>
+            <br>
+
+            <select size="1">
+                <option value="poniedzialek">poniedziałek</option>
+                <option value="wtorek">wtorek</option>
+                <option value="sroda">środa</option>
+                <option value="czwartek">czwartek</option>
+                <option value="piatek">piątek</option>
+                <option value="sobota">sobota</option>
+                <option value="niedziela">niedziela</option>
+            </select><br><br>
+
+            <input type="submit" name="wyslij" value="Wyślij" />&nbsp;&nbsp;
+            <input type="reset" name="zeruj" value="Wyczyść" />
+
+        </form>
 
     </body>
 </html>
