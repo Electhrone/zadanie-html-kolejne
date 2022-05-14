@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
 
-    <title>Formularz językowy</title>
-    <meta charset="UTF-8">
+        <title>Formularze - index</title>
+        <meta charset="UTF-8" />
 
-</head>
-<body>
+        <link rel="stylesheet" href="style.css">
 
-    <form>
+    </head>
+    <body bgcolor="#EB974D">
+
+        <header>&nbsp;Formularze</header>
+
+
+        <aside>
+
+            <br><br>
+            <em>Spis treści:</em><br><br><br>
+            <a href="index.html">
+                <button>Formularz 1</button>
+            </a><br>
+            <a href="zad2.html">
+                <button id="current">Formularz 2</button>
+            </a><br>
+            <a href="zad3.html">
+                <button>Formularz 3</button>
+            </a><br>
+            <a href="zad4.html">
+                <button>Formularz 4</button>
+            </a><br>
+            <a href="zad5.html">
+                <button>Formularz 5</button>
+            </a><br>
+            <a href="zad6.html">
+                <button>Formularz 6</button>
+            </a><br>
+                
+        </aside>
+
+    <div><center><form>
+        <br><br><br>
 
         Nazwisko i Imię: <br>
-        <input type="text" name="nazwa" value=" " size="40"><br><br>
+        <input type="text" name="nazwa" value=" " size="35"><br><br>
         <strong>Wybór języka: </strong><br>
         <select multiple size="3">
             <option value="język angielski"> Język angielski</option>
@@ -22,10 +53,11 @@
             <option value="język hiszpanski"> Język hiszpański</option>
         </select>
         <p>
-            <input type="submit" value="Wyślij" />
+            <input type="submit" name="wyslij" value="Wyślij" />&nbsp;&nbsp;
+            <input type="reset" name="seruj" value="Wyczyść" onclick="alert('Wyczyszczono dane.')" />
         </p>
 
-    </form>
+    </form></center></div>
 
 </body>
 </html>
